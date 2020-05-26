@@ -1,0 +1,22 @@
+
+<div class="login-page">
+    <div class="form">
+     
+      
+    
+      <form class="login-form" routerLink="/dashboard" #loginForm="ngForm">
+        {{loginForm.value | json}}
+
+        <h3 style="text-align: center; margin-bottom: 30px;">LOGIN</h3>
+        <p><input type="email" class="a" id="enrollemail" value="" placeholder="Enter email" name="email" ngModel> </p>
+        <p><input type="password" class="a" id="pass" value="" placeholder="Enter password" name="password" ngmodel> </p>
+        <p><input type="checkbox" class="mailp2" id="passcheck" onclick="showpass()" value=""> check password     </p>
+        <p><button id="signupbtn" type="submit">LOGIN</button></p>
+        <p class="message">Not registered?  <a routerLink='/signup'>Sign up</a></p>
+    
+    </form>
+    
+    
+    
+    </div>
+    </div>
